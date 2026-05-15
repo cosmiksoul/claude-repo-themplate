@@ -20,7 +20,8 @@
 │   │   ├── Cowork-Onboarding.md       ← вход в проект для Cowork
 │   │   ├── Code-Onboarding.md         ← вход в проект для Claude Code
 │   │   ├── JTBD.md                    ← backlog user stories
-│   │   └── CONTEXT.md                 ← история проекта, timeline
+│   │   ├── CONTEXT.md                 ← история проекта, timeline
+│   │   └── sprint-logs/               ← примеры артефактов одного сквозного спринта
 │   └── context/
 │       ├── concept.md                 ← заполнить: зачем продукт
 │       ├── architecture.md            ← заполнить: стек, структура
@@ -38,10 +39,17 @@
 4. Открыть инстанс Cowork → "Прочитай `docs/project/Cowork-Onboarding.md`, давай начнём". Дальше работа по `Dev-Cycle.md`.
 5. Когда дойдёшь до фазы DEV первого спринта — открыть инстанс Claude Code → "Прочитай `docs/project/Code-Onboarding.md`, дальше работаем по `sprint-1-prompt.md`".
 
+## Как выглядят артефакты процесса
+
+В `docs/project/sprint-logs/` лежат заполненные примеры одного сквозного спринта — `sprint-N-prompt.md`, `sprint-report-N.md`, `code-review-sprint-N.md`, `test-cases-sprint-N.md`. Это **демо для наглядности**, не пустые шаблоны. Сами шаблоны (со структурой) зашиты в `Dev-Cycle.md` — Cowork и Claude Code генерируют артефакты по ним сами в реальной работе.
+
+Если примеры не нужны — удалите папку `docs/project/sprint-logs/` после клонирования.
+
+В реальном проекте артефакты спринтов кладутся прямо в `docs/project/`, не в подпапку.
+
 ## Что НЕ входит в пакет
 
-- Шаблоны `sprint-N-prompt.md`, `sprint-report-N.md`, `code-review-sprint-N.md`, `test-cases-sprint-N.md` — это **артефакты процесса**, которые Cowork (и Code для report) генерируют сами по инструкциям из `Dev-Cycle.md`. Туда зашиты шаблоны.
-- билды / код / принципы деплоя — это часть конкретного проекта, не процесса.
+- Билды / код приложения / конфиги деплоя — это часть конкретного проекта, не процесса.
 
 ## Что обновлять по ходу проекта
 
